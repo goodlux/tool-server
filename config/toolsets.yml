@@ -1,0 +1,9 @@
+toolsets:
+  - name: "scramble-tools"
+    repo: "https://github.com/yourusername/scramble-tools"
+    branch: "main"
+    path: "search" # Directory containing tool implementations
+  - name: "qscp-tools"
+    repo: "https://github.com/yourusername/qscp-tools"
+    branch: "main"
+    path: "semantic"

@@ -1,0 +1,20 @@
+# Layout .md
+
+tool-server/
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── src/
+│   ├── server.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── base_tool.py      # Abstract base class for tools
+│   │   └── tool_registry.py  # Handles tool registration & discovery
+│   └── builtin_tools/        # Basic tools that come with server
+│       ├── __init__.py
+│       ├── now.py
+│       └── list_tools.py
+├── config/
+│   └── toolsets.yml          # Configure which toolsets to load
+└── scripts/
+    └── download_toolsets.sh  # Script to fetch external toolsets

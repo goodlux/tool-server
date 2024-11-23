@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  tool-server:
+    build: .
+    ports:
+      - "8000:8000"
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
